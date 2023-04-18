@@ -10,7 +10,7 @@ class HyperShell < Formula
 
   bottle do
     root_url "https://github.com/glentner/hyper-shell/releases/download/2.3.0/"
-    sha256 cellar: :any, ventura:  "01bc0980d321ca8dedcd8d16a2f383433307b3a7f60a34f397933ca16cc5052b"
+    sha256 cellar: :any, ventura: "c73df517c2231048efaa8837552db946078de7b82af036b93808091ab2b733e6"
   end
 
   depends_on "rust"
