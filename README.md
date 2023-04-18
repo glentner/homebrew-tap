@@ -62,11 +62,4 @@ the corresponding release page on GitHub.
 
 ```
 $ brew bottle hyper-shell                
-==> Determining glentner/tap/hyper-shell bottle rebuild...
-==> Bottling hyper-shell--2.3.0.ventura.bottle.tar.gz...
-==> Detecting if hyper-shell--2.3.0.ventura.bottle.tar.gz is relocatable...
-./hyper-shell--2.3.0.ventura.bottle.tar.gz
-  bottle do
-    sha256 cellar: :any, ventura: "c73df517c2231048efaa8837552db946078de7b82af036b93808091ab2b733e6"
-  end
 ```
