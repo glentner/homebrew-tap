@@ -3,13 +3,13 @@ class HyperShell < Formula
 
   desc "Process shell commands over a distributed, asynchronous queue"
   homepage "https://hyper-shell.readthedocs.io"
-  url "https://files.pythonhosted.org/packages/07/18/8fabd0cb13e555cb5cc70b840a48c982e3267f5cf8ead390dd0f170acd48/hyper-shell-2.2.0.tar.gz"
-  sha256 "a030792841f1856fb1770f3c7b59400ef4c94e572b54eb7c9a0af9824f1c53ef"
+  url "https://files.pythonhosted.org/packages/c4/a7/47440f73802fcf090550d23a79387facbe54e1b1e5f5b284cd5f5dc5bd70/hyper-shell-2.3.0.tar.gz"
+  sha256 "0c5a7307044fef51917ba79c9b26a3ce6e7a959a496ea2b743f8dc9be5a5c4c4"
   license "Apache-2.0"
-  version "2.2.0"
+  version "2.3.0"
 
   bottle do
-    root_url "https://github.com/glentner/hyper-shell/releases/download/2.2.0/"
+    root_url "https://github.com/glentner/hyper-shell/releases/download/2.3.0/"
     sha256 cellar: :any, ventura:  "01bc0980d321ca8dedcd8d16a2f383433307b3a7f60a34f397933ca16cc5052b"
   end
 
@@ -33,8 +33,8 @@ class HyperShell < Formula
   end
 
   resource "cryptography" do
-    url "https://files.pythonhosted.org/packages/15/d9/c679e9eda76bfc0d60c9d7a4084ca52d0631d9f24ef04f818012f6d1282e/cryptography-40.0.1.tar.gz"
-    sha256 "2803f2f8b1e95f614419926c7e6f55d828afc614ca5ed61543877ae668cc3472"
+    url "https://files.pythonhosted.org/packages/f7/80/04cc7637238b78f8e7354900817135c5a23cf66dfb3f3a216c6d630d6833/cryptography-40.0.2.tar.gz"
+    sha256 "c33c0d32b8594fa647d2e01dbccc303478e16fdd7cf98652d5b3ed11aa5e5c99"
   end
 
   resource "greenlet" do
@@ -58,8 +58,8 @@ class HyperShell < Formula
   end
 
   resource "psycopg2-binary" do
-    url "https://files.pythonhosted.org/packages/8c/45/77147700f5088efaf9235a3a62b611b594d477a5c5613b5316d0ebd18be0/psycopg2-binary-2.9.5.tar.gz"
-    sha256 "33e632d0885b95a8b97165899006c40e9ecdc634a529dca7b991eb7de4ece41c"
+    url "https://files.pythonhosted.org/packages/98/3e/05ab0922422c91ca0ecb5939a100f8dc2b5d15f5978433beadc87c5329bf/psycopg2-binary-2.9.6.tar.gz"
+    sha256 "1f64dcfb8f6e0c014c7f55e51c9759f024f70ea572fbdef123f85318c297947c"
   end
 
   resource "pycparser" do
@@ -68,8 +68,8 @@ class HyperShell < Formula
   end
 
   resource "Pygments" do
-    url "https://files.pythonhosted.org/packages/da/6a/c427c06913204e24de28de5300d3f0e809933f376e0b7df95194b2bb3f71/Pygments-2.14.0.tar.gz"
-    sha256 "b3ed06a9e8ac9a9aae5a6f5dbe78a8a58655d17b43b93c078f094ddc476ae297"
+    url "https://files.pythonhosted.org/packages/03/98/c7468f5a1b434cb15b1d240c5f3bd015962af8a822e89e7f10ee11e68928/Pygments-2.15.0.tar.gz"
+    sha256 "f7e36cffc4c517fbc252861b9a6e4644ca0e5abadf9a113c72d1358ad09b9500"
   end
 
   resource "PyNaCl" do
@@ -83,13 +83,13 @@ class HyperShell < Formula
   end
 
   resource "rich" do
-    url "https://files.pythonhosted.org/packages/9a/50/672a8d347f92bc752b04c338bbf932fbd0104fbc416c82cc91aa5f7b4b0b/rich-13.3.3.tar.gz"
-    sha256 "dc84400a9d842b3a9c5ff74addd8eb798d155f36c1c91303888e0a66850d2a15"
+    url "https://files.pythonhosted.org/packages/31/3b/2360352760b436f822258396e66ffb6d42585518a9cde2f93f142e64c5eb/rich-13.3.4.tar.gz"
+    sha256 "b5d573e13605423ec80bdd0cd5f8541f7844a0e71a13f74cf454ccb2f490708b"
   end
 
   resource "SQLAlchemy" do
-    url "https://files.pythonhosted.org/packages/93/06/7574aac5d3f81f367cfd3ff0a9f8bcd1086a3a4f6d5948616cebf93db242/SQLAlchemy-2.0.7.tar.gz"
-    sha256 "a4c1e1582492c66dfacc9eab52738f3e64d9a2a380e412668f75aa06e540f649"
+    url "https://files.pythonhosted.org/packages/74/2c/2316a7a0d8b03e34741b3763604d180423f79730010dd7ed61d0f2854d8d/SQLAlchemy-2.0.9.tar.gz"
+    sha256 "95719215e3ec7337b9f57c3c2eda0e6a7619be194a5166c07c1e599f6afc20fa"
   end
 
   resource "toml" do
@@ -107,7 +107,6 @@ class HyperShell < Formula
     sha256 "5cb5f4a79139d699607b3ef622a1dedafa84e115ab0024e0d9c044a9479ca7cb"
   end
 
-
   def install
     virtualenv_install_with_resources
     prefix.install libexec/"share"
@@ -117,4 +116,3 @@ class HyperShell < Formula
   end
 
 end
-
